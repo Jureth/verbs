@@ -21,14 +21,14 @@
 	<div class="col-md-12" id="content">
 		<div class="row text-center" id="form">
 			<div class="col-md-12">
-				<form class="form-inline">
+				<form class="">
 					<div class="form-group">
 						<label for="countfield">Count</label>
-						<input type="text" name="count" id="countField" />
+						<input type="number" name="count" id="countField" />
 					</div>
 					<div class="form-group">
 						<label for="questionTime">Question Interval</label>
-						<input type="numeric" name="questionTime" id="questionTimeField" />
+						<input type="number" name="questionTime" id="questionTimeField" />
 					</div>
 					<div class="form-group">
 						<label><input type="checkbox" name="randomForm" id="randomFormField">Ask any form</label>
