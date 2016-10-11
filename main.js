@@ -26,8 +26,8 @@ function ask() {
 
 function answer(words) {
 	fillArea(words[0], words[1], words[2]);
+	counter--;
 	if (counter > 0) {
-		counter--;
 		setTimeout(ask, 1500);
 	}else{
 		setTimeout(finish, 1500);
