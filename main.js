@@ -1,4 +1,3 @@
-var $content = $('#content');
 var counter;
 
 function getWords() {
@@ -22,9 +21,9 @@ function answer(words) {
 	fillArea(words[0], words[1], words[2]);
 	if (counter > 0) {
 		counter--;
-		setTimeout(ask, 1000);
+		setTimeout(ask, 1500);
 	}else{
-		setTimeout(finish, 1000);
+		setTimeout(finish, 1500);
 	}
 }
 
@@ -33,10 +32,12 @@ function finish() {
 	$('#form').show();
 }
 
-$('#start_button', $content).click(function() {
-  $('#form').hide();
-  $('#test_area').show();
-  var counter = 20;
-  ask();
+$(document).ready(function(){
+	$('#start_button').click(function() {
+		$('#form').hide();
+		$('#test_area').show();
+		counter = 20;
+		ask();
+	});
 });
 
