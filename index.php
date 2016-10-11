@@ -19,30 +19,26 @@
 <body>
 <div class="row">
 	<div class="col-md-12" id="content">
-		<div class="row text-center" id="form">
-			<div class="col-md-12">
-				<form class="">
+		<div class="row" id="form">
+			<div class="col-md-2 col-md-offset-5">
 					<div class="form-group">
 						<label for="countfield">Count</label>
-						<input type="number" name="count" id="countField" />
+						<input type="number" name="count" id="countField" class="form-control" value="20"/>
 					</div>
 					<div class="form-group">
 						<label for="questionTime">Question Interval</label>
-						<input type="number" name="questionTime" id="questionTimeField" />
+						<input type="number" name="questionTime" id="questionTimeField"  class="form-control" value="2000"/>
 					</div>
 					<div class="form-group">
 						<label><input type="checkbox" name="randomForm" id="randomFormField">Ask any form</label>
 					</div>
 					<button class="btn btn-primary" id="start_button" type="submit">Start</button>
-				</form>
 			</div>
 		</div>
 		<div class="row" id="test_area" style="display: none">
-			<div class="col-md-3"></div>
-			<div class="col-md-2" id="col_1"></div>
+			<div class="col-md-2 col-md-offset-3" id="col_1"></div>
 			<div class="col-md-2" id="col_2"></div>
 			<div class="col-md-2" id="col_3"></div>
-			<div class="col-md-3"></div>
 		</div>
 	</div>
 </div>
