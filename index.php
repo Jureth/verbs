@@ -14,11 +14,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>verbs = <?= json_encode(file_exists('verbs.csv') ? array_map('str_getcsv', file('verbs.csv')): []); ?></script>
 <script src="main.js"></script>
+<link rel="stylesheet" href="/main.css" />
 </head> 
 <body>
 <div class="row">
 	<div class="col-md-12" id="content">
-		<div class="row" id="form">
+		<div class="row text-center" id="form">
 			<div class="col-md-12"><button class="btn btn-primary" id="start_button" type="submit">Start</button></div>
 		</div>
 		<div class="row" id="test_area" style="display: none">
