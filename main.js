@@ -1,7 +1,7 @@
 var counter;
 
 function getWords() {
-	line = Math.floor(Math.random * verbs.length);
+	line = Math.floor(Math.random() * verbs.length);
 	return verbs[line];	
 }
 
