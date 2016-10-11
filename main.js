@@ -1,4 +1,6 @@
-var counter;
+var counter = 20;
+var questionInterval = 2000;
+var askRandomForm = false;
 
 function getWords() {
 	line = Math.floor(Math.random() * verbs.length);
@@ -13,8 +15,13 @@ function fillArea(first, second, third) {
 
 function ask() {
 	words = getWords();
-	fillArea('', words[0], '');
-	setTimeout(answer, 2000, words);
+	if (askRandomForm) {
+		var i = Math.floor(Math.random() * 3);
+	}else {
+		var i = 0;
+	}
+	fillArea('', words[i], '');
+	setTimeout(answer, questionInterval, words);
 }
 
 function answer(words) {
@@ -36,7 +43,10 @@ $(document).ready(function(){
 	$('#start_button').click(function() {
 		$('#form').hide();
 		$('#test_area').show();
-		counter = 20;
+		questionInterval = parseInt($('#questionTimeField').val());
+		counter = parseInt($('#countField').val());
+		askRandomForm = $('#randomFormField').is(':checked');
+
 		ask();
 	});
 });

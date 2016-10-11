@@ -20,7 +20,22 @@
 <div class="row">
 	<div class="col-md-12" id="content">
 		<div class="row text-center" id="form">
-			<div class="col-md-12"><button class="btn btn-primary" id="start_button" type="submit">Start</button></div>
+			<div class="col-md-12">
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="countfield">Count</label>
+						<input type="text" name="count" id="countField" />
+					</div>
+					<div class="form-group">
+						<label for="questionTime">Question Interval</label>
+						<input type="numeric" name="questionTime" id="questionTimeField" />
+					</div>
+					<div class="form-group">
+						<label><input type="checkbox" name="randomForm" id="randomFormField">Ask any form</label>
+					</div>
+					<button class="btn btn-primary" id="start_button" type="submit">Start</button>
+				</form>
+			</div>
 		</div>
 		<div class="row" id="test_area" style="display: none">
 			<div class="col-md-3"></div>
